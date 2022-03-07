@@ -1,0 +1,111 @@
+<! DOCTYPE html>
+<html>
+<title>
+Remove option from select list using JavaScript
+</title>
+<head>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<style>
+h2 {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #aaa;
+  align: center;
+  font-size: 30px;
+  margin-top: 1.5rem;
+  font-weight: 1000;
+}
+p {
+font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #aaa;
+  align: center;
+  font-size: 20px;
+  margin-top: 1.5rem;
+  font-weight: 1000;
+}
+h3 {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: #aaa;
+  align: center;
+  font-size: 30px;
+  margin-top: 1.5rem;
+  font-weight: 1000;
+}
+body {
+  background: #191828;
+ color: #aaa;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6em;
+  margin-top: 30;
+   }
+   ::placeholder { 
+   color: #aaa;
+   font-weight: bold;
+  opacity: 1; 
+}
+input[type='button'] {
+  box-sizing: border-box;
+  height: 35px;
+  display: inline-block;
+  border: 3px solid #2F96EF;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+  transition: .2s;
+}
+#selectNow {
+ box-sizing: border-box;
+  height: 35px;
+  display: inline-block;
+  border: 3px solid #2F96EF;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 10px 0;
+  transition: .2s;
+}
+#selectNow:hover {
+	color: #FFFFFF;
+	background-color: #aaa;
+	font-weight: bold;
+  opacity: 1; 
+}
+em {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+input[type='button']:hover {
+	color: #FFFFFF;
+	background-color: #3494e6;
+}
+</style>
+   <body>
+   <h3 align="center"> Qa automation Students: </h3> 		   
+               <h2 align="center"> Select the student you want to remove  </h2>                                
+                  <form id = "myForm" align = "center">
+         <select id = "selectNow">
+            <option class="op" value = "Muhannad"> Muhannad </option>
+            <option class="op" value =?shaimaa? > shaimaa </option>
+           <option class="op" value =?razan? > razan </option>
+    <option class="op" value =?abedalrahman? > abedalrahman </option>
+    <option class="op" value =?esraa? > esraa </option>
+    <option class="op" value =?khaled? > khaled </option>
+    <option class="op" value=?maen? > maen </option>
+         </select>
+         <input id="remove" type = "button" onclick = "remove()" value = "Click to Remove" >
+      </form>
+      <p align="center"> <em> Select and click the button to remove the selected option. </em> </p>
+     <script>
+         function remove() {
+            var x = document.getElementById("selectNow");
+            x.remove(x.selectedIndex);
+         }
+      </script>
+     </body>
+</html>
+
+ 
